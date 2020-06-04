@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+<!DOCTYPE html>
+<html lang=“en” dir=”ltr”>
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us</title>
+      </head>
+	<body>
+
+        {% block pagecontent%}
+
+        <h1> Hello, {{username}} </h1>
+        <p>Email: {{email}}</p>
+        <p>{{text}}</p>
+
+        <ul>
+            <li>{{text1}}</li>
+            <li>{{text2}}</li>
+        </ul>
+
+        {% include 'partials/nav-bar.html' %}     
+
+        {%endblock%}
+
+	</body>
+</html>

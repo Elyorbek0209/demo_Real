@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=“en” dir=”ltr”>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Django Sample Site - {% block title %}{% endblock %}
+        </title>
+        <script src="{% static 'home_app/main.js' %}"></script> <!--This is how to include a static file-->
+        <link rel="stylesheet" href="{% static 'home_app/style.css' %}" type="text/css"/>
+        
+        <script id="_carbonads_projs" type="text/javascript" src="https://srv.carbonads.net/ads/CKYIE23N.json?segment=placement:bootswatchcom&amp;callback=_carbonads_go"></script>
+
+    </head>
+	<body>
+
+        
+        
+        <div class="container">
+
+            {% block pagecontent%}
+
+
+            {%endblock%}
+        </div>
+	</body>
+</html>
